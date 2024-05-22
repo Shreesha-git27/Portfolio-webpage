@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(36, 36, 61);
+            color: white;
+            font-family: sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(23, 23, 59);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(156, 156, 237);
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .grey {
+            color: grey;
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 180px;
+        }
+
+        .image-top {
+            width: 51px;
+            position: relative;
+            top: -55px;
+            left: -25px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 44px;
+            width: 200px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 63px;
+            color: gray;
+            width: 150px;
+            font-size: 12px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            height: 200px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 200px;
+        }
+
+        .footer-second ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-second ul li a:hover {
+            color: rgb(158, 158, 239);
+        }
+
+        .footer-third ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-third ul li a:hover {
+            color: rgb(158, 158, 239);
+        }
+
+        .footer-fourth ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-fourth ul li a:hover {
+            color: rgb(158, 158, 239);
+        }
+
+        footer .footer-rights {
+            color: gray;
+            text-align: center;
+            padding: 12px 0;
+        }
+
+        .leftSection .btn1 {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .leftSection .btn2 {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .leftSection .btn1:hover {
+            background-color: #0e0e1a;
+        }
+
+        .leftSection .btn2:hover {
+            background-color: #0e0e1a;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="purple">Shreesha</span>
+                <div>and I currently doing</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn1">Download Resume</button>
+                    <button class="btn2">Visit GitHub</button>
+                </div>
+            </div>
+
+            <div class="rightSection">
+                <img src="BG.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="grey">Where I have studied</span>
+            <h1>My education</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="ig.png">
+                    <div class="vertical-title">Primary School(2008-2013)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde consequatur
+                        reiciendis iste, soluta recusandae fugiat deleniti eius ea quo distinctio facilis ad ducimus
+                        iure voluptatum perspiciatis nemo corrupti optio.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="ig.png">
+                    <div class="vertical-title">High School(2014-2016)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde consequatur
+                        reiciendis iste, soluta recusandae fugiat deleniti eius ea quo distinctio facilis ad ducimus
+                        iure voluptatum perspiciatis nemo corrupti optio.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="ig.png">
+                    <div class="vertical-title">Pre-University(2017-2019)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde consequatur
+                        reiciendis iste, soluta recusandae fugiat deleniti eius ea quo distinctio facilis ad ducimus
+                        iure voluptatum perspiciatis nemo corrupti optio.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="ig.png">
+                    <div class="vertical-title">B.E Degree(2021-2025)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde consequatur
+                        reiciendis iste, soluta recusandae fugiat deleniti eius ea quo distinctio facilis ad ducimus
+                        iure voluptatum perspiciatis nemo corrupti optio.
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Student Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-rights">www.studentporfolio.com | All Rights Reserved</div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Bachelor of Engineering', 'Information Science', '6th Semester'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
